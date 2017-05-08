@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Restaurent</title>
+    <link rel="stylesheet" type="text/css" href="mycss.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+    <link rel="shortcut icon"  href="favicon.ico"/>
+    <script src="myscript.js"></script>
+</head>
+<body class="landing-image" onload="answers()">
+<div class="ui container">
+  <h2 class="ui header" style="color:white;"> Grill World</h2>
+ <div class="ui horizontal divider" style="color:white;">Order</div>
+<form class="ui form segment" name="order" >
+  <div class="two fields">
+    <div class="field">
+      <label>Item 1</label>
+      <select class="ui dropdown" name="item1" id="mySelectItem1" required>
+        <option value="">NONE</option>
+        <option value="Grilled Chicken">Grilled Chicken</option>
+        <option value="Barbeque Chicken">Barbeque Chicken</option>
+        <option value="Alfaham dajaj">Alfaham dajaj</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Quatity</label>
+      <select  id="mySelect1" class="ui dropdown" required >
+        <option value="0"> NONE</option>
+        <option value="150">Half</option>
+        <option value="300">Full</option>
+      </select>
+    </div>
+  </div>
+
+
+<div class="two fields">
+    <div class="field">
+      <label>Item 2</label>
+      <select class="ui dropdown" name="item2" id="mySelectItem2" required>
+        <option value="">NONE </option>
+        <option value="Grilled Chicken">Grilled Chicken</option>
+        <option value="Barbeque Chicken">Barbeque Chicken</option>
+        <option value="Alfaham dajaj">Alfaham dajaj</option>
+     </select>
+    </div>
+    <div class="field">
+      <label>Quatity</label>
+      <select id="mySelect2" class="ui dropdown" required name="quantity2">
+        <option value="0">NONE</option>
+        <option value="150">Half</option>
+        <option value="300">Full</option>
+      </select>
+    </div>
+  </div>
+  <div class="ui primary submit button" id= "sub"  onclick="answers()">Submit</div>
+  <div class="ui error message"></div>
+
+</form>
+
+<div class="ui modal">
+  <i class="close icon"></i>
+  <div class="header">
+    Complete Order
+  </div>
+  <div class="image content">
+    
+    <div class="description">
+      <div class="ui header">Your Bill  is given below...</div>
+			<table class="ui selectable inverted table">
+			    <thead>
+			        <tr>
+			            <th>Item Name</th>
+			            <th>Quantity</th>
+			            <th class="right aligned">Amount</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr>
+			            <td><span id="it1"></td>
+			            <td><span id="q1"></td>
+			            <td class="right aligned"><span id="check1"></span></td>
+			        </tr>
+			        <tr>
+			            <td><span id="it2"></td>
+			            <td><span id="q2"></td>
+			            <td class="right aligned"><span id="check2"></span></td>
+			        </tr>
+			        <tr>
+			            <td>Total</td>
+			            <td></td>
+			            <td class="right aligned"><span id="check3"></span></td>
+			        </tr>
+			    </tbody>
+			</table>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui black deny button">
+      Cancel
+    </div>
+    <div class="ui positive right labeled icon button">
+      Confirm
+      <i class="checkmark icon"></i>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+
+     <style type="text/css">
+  h2 {
+    margin: 2em 0em;
+  }
+  .ui.container {
+    padding-top: 5em;
+    padding-bottom: 5em;
+
+    padding-left: 25em;
+    padding-right: 25em;
+  }
+  .ui-move{
+  	padding-left: 5em;
+  }
+  .landing-image {
+    background-image: url('bg.jpg') !important;
+    background-size: cover !important;
+    opacity: 0.9 !important;
+}
+  </style>
